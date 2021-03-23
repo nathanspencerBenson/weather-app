@@ -7,7 +7,48 @@
     <title>Weather app</title>
 </head>
 <body>
- 
+    <header>
+        <h1>Weather app</h1>
+        <div class="search-bar">
+            <i class="fas fa-search" id="search-icon"></i>
+            <input type="text" name="search-input" id="search-input" placeholder="Search city">
+        </div>
+    </header>
+    <main>
+        <section class="weather-output">
+            <div class="weather-temp-container">
+                <h2 class="weather-city"> Barcelona </h2>
+                <p><span class="weather-temp">32</span>°C</p>
+            </div>
+            <div class="weather-description-container">
+                <p class="weather-description">Mostly sunny</p>
+                <div class="weather-icon"></div>
+            </div>
+            <div class="weather-extra">
+                <div class="details-item">
+                    <h2>Feels like</h2>
+                    <p><span id="feels-like">10</span>°C</p>
+                </div>
+                <div class="details-item">
+                    <h2>Humidity</h2>
+                    <p><span id="humidity">20</span>%</p>
+                </div>
+                <div class="details-item">
+                    <h2>Wind</h2>
+                    <p> <span id="wind">5</span> m/s</p>
+                </div>
+                <div class="details-item">
+                    <h2>Min temp</h2>
+                    <p><span id="min-temp">20</span>°C</p>
+                </div>
+                <div class="details-item">
+                    <h2>Max temp</h2>
+                    <p><span id="max-temp">60</span>°C</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="https://kit.fontawesome.com/4694fe705c.js" crossorigin="anonymous"></script>
 <script src="./dist/bundle.js"></script>
 </body>
 </html>

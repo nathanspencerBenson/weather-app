@@ -1,3 +1,84 @@
-body {
-  background-color: purple;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: linear-gradient(
+      0deg,
+      rgba(26, 24, 25, 0.3),
+      rgba(17, 15, 16, 0.3)
+    ),
+    url("/images/background-start.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.weather-output {
+  color: white;
+  height: 400px;
+  min-width: 300px;
+}
+
+.weather-temp-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2em;
+}
+
+.weather-temp-container p {
+  margin-left: 20px;
+}
+
+.weather-city {
+  border-bottom: white 2px solid;
+}
+
+.weather-description-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.weather-icon {
+  height: 100px;
+  width: 100px;
+  background: url("http://openweathermap.org/img/wn/01d@2x.png") no-repeat;
+}
+
+.weather-extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10vh;
+  font-size: 12px;
+}
+
+.details-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-extra h2 {
+  color: #41b3a3;
+  font-weight: bold;
+}
+
+.weather-extra p {
+  font-size: 1.5em;
 }

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@500&display=swap");
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+
+h1 {
+  color: white;
+}
+
+.search-bar {
+  background: rgba(245, 245, 245, 0.192);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.search-bar i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+header input {
+  border: none;
+  background: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+
+  width: 30vw;
+}
+
+header input::placeholder {
+  color: white;
+}
+
+header input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
