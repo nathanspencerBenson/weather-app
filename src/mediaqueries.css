@@ -1,3 +1,11 @@
+@media (max-width: 330px) {
+  body,
+  header,
+  .weather-extra {
+    font-size: 0.75em;
+  }
+}
+
 @media (min-width: 992px) {
   .weather-temp-container {
     justify-content: center;
