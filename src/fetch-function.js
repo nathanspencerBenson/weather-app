@@ -12,7 +12,7 @@ export function fetchWeather (city) {
        console.log(response)
     })
     .catch(error => {
-        alert(error);
+        console.log('we made a mistake' + error);
 
     });
 };
@@ -32,6 +32,7 @@ export function fetchWeather2 (city) {
             weatherData.wind = Math.round(response.wind.speed);
             weatherData.minTemp = Math.round(response.main.temp_min);
             weatherData.maxTemp = Math.round(response.main.temp_max);
+            weatherData.main = response.weather[0].main;
         })
         .catch(error => {
             console.log(error);

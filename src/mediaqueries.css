@@ -1,0 +1,31 @@
+@media (min-width: 992px) {
+  .weather-temp-container {
+    justify-content: center;
+  }
+  .weather-description-container {
+    justify-content: center;
+  }
+  .weather-extra {
+    flex-direction: row;
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .weather-extra {
+    font-size: 1.2em;
+    justify-content: space-between;
+    width: 80vw;
+  }
+}
+@media (min-width: 1920px) {
+  body {
+    font-size: 2em;
+  }
+
+  .weather-extra {
+    font-size: 1.2em;
+    justify-content: space-between;
+    width: 80vw;
+  }
+}

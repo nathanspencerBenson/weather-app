@@ -20,11 +20,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 85vh;
 }
 
 .weather-output {
+  margin-top: 5vh;
   color: white;
   height: 400px;
   min-width: 300px;
