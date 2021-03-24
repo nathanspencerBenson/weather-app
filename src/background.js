@@ -5,8 +5,10 @@ export let index = 0;
 
 export function backgroundChange () {
     const html = document.querySelector('html');
+    const weatherIcon = document.querySelector('.weather-icon');
     if(weatherData.main == 'Clear') {
         html.style = "background: linear-gradient(0deg, rgba(26, 24, 25, 0.3), rgba(17, 15, 16, 0.3)), url('images/background-start.jpg') no-repeat center center fixed; background-size: cover;";
+        weatherIcon.style = 'background: url("http://openweathermap.org/img/wn/01d@2x.png") no-repeat;';
     } else if (weatherData.main == 'Rain') {
         html.style = "background: linear-gradient(0deg, rgba(26, 24, 25, 0.45), rgba(17, 15, 16, 0.45)), url('images/rain.jpg') no-repeat center center fixed; background-size: cover;";
     } else if (weatherData.main == 'Clouds') {
