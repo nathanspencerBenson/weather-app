@@ -43,3 +43,12 @@ textarea:focus,
 select:focus {
   outline: none;
 }
+
+.error {
+  color: red;
+  display: none;
+}
+
+.error-active {
+  display: inline-block;
+}

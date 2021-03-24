@@ -18,6 +18,8 @@ export function fetchWeather (city) {
 };
 
 export function fetchWeather2 (city) {
+        document.querySelector('.error').classList.remove('error-active');
+
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=72c205fe50ec0c81fbf1577dbf8e83f0&units=metric`)
         .then(response => {
             return response.json();
@@ -33,10 +35,11 @@ export function fetchWeather2 (city) {
             weatherData.minTemp = Math.round(response.main.temp_min);
             weatherData.maxTemp = Math.round(response.main.temp_max);
             weatherData.main = response.weather[0].main;
+            document.querySelector('.weather-output').style = "visibility: visible;";
         })
         .catch(error => {
-            console.log(error);
-
+            document.querySelector('.error').classList.add('error-active');
+            document.querySelector('.weather-output').style = "visibility: hidden;";
         });
 
  };
@@ -64,7 +67,7 @@ export function fetchWeather2 (city) {
      minTemp.textContent = weatherData.minTemp;
      maxTemp.textContent = weatherData.maxTemp;
 
- }
+ };
 
 
 
