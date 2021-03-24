@@ -26,6 +26,7 @@ export function fetchWeather2 (city) {
 
         }).then(response => {
             weatherData.name = response.name;
+            weatherData.country = response.sys.country.toUpperCase();
             weatherData.description = response.weather[0].description;
             weatherData.iconData = response.weather[0].icon;
             weatherData.temp = Math.round(response.main.temp);
@@ -57,13 +58,13 @@ export function fetchWeather2 (city) {
      const minTemp = document.querySelector('#min-temp');
      const maxTemp = document.querySelector('#max-temp');
      
+     cityName.textContent = weatherData.name+ ', ' + weatherData.country;
      weatherTemp.textContent = weatherData.temp;
      description.textContent = weatherData.description;
      weatherIcon.style = `background: url("http://openweathermap.org/img/wn/${weatherData.iconData}@2x.png") no-repeat;`
      feelsLike.textContent = weatherData.feels_like;
      humidity.textContent = weatherData.humidity;
      wind.textContent = weatherData.wind;
-     cityName.textContent = weatherData.name;
      minTemp.textContent = weatherData.minTemp;
      maxTemp.textContent = weatherData.maxTemp;
 

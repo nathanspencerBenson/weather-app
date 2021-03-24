@@ -30,19 +30,13 @@ searchInput.addEventListener('keypress', (e) =>{
 
 })
 
-// setInterval(function() {
-// backgroundChange();
-// }, 3000)
 
 
-// fetchWeather('london');
+
+fetchWeather('london');
 // fetchWeather2('marbella');
 // console.log(weatherData);
 
 
-
-// setInterval(function() {
-//     displayWeather();
-// }, 4000);
 
 

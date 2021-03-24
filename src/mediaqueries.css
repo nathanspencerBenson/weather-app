@@ -6,6 +6,11 @@
   }
 }
 
+@media (min-width: 600px) {
+  .weather-temp-container {
+    font-size: 2em;
+  }
+}
 @media (min-width: 992px) {
   .weather-temp-container {
     justify-content: center;
