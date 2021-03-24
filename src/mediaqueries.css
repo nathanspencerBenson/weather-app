@@ -1,8 +1,11 @@
-@media (max-width: 330px) {
+@media (max-width: 370px) {
   body,
   header,
   .weather-extra {
     font-size: 0.75em;
+  }
+  .details-item {
+    margin-bottom: 10px;
   }
 }
 
